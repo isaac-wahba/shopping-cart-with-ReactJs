@@ -2,21 +2,22 @@ import React from "react";
 import "./App.css";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
-import Cart from "./Components/Cart/Cart";
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-      </header>
-      <div className="App-body">
-        <Cart />
+import List from "./Components/Items List/list";
+const App = ()=> {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <Header />
+        </header>
+        <div className="App-body">
+          <List />
+        </div>
+        <footer className="App-footer">
+          <Footer />
+        </footer>
       </div>
-      <footer className="App-footer">
-        <Footer />
-      </footer>
-    </div>
-  );
+    );
+  
 }
 
 export default App;
