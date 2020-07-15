@@ -1,0 +1,18 @@
+button {
+    padding: inherit;
+    background-color: #ffffff;
+    border: none;
+    cursor: grabbing;
+    position: inherit;
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: auto;
+}
+
+input {
+    width: 3rem;
+    text-align: center;
+    margin: auto;
+}
