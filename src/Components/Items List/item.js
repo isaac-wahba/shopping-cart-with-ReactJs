@@ -7,9 +7,11 @@ class Product extends React.Component {
   };
 
   getQuantity = (event) => {
-    this.setState({
+    if (this.state.quantity - 1 <= 0) {
+      this.props.onDelete(this.props.item.id);
+    } else {this.setState({
       quantity: event.target.value,
-    });
+    });}
   };
 
   increasingQuantity = () => {
