@@ -41,14 +41,13 @@ class Product extends React.Component {
 
     return (
       <div className="item" key={item.id}>
-      
         <div className="productImage">
           {" "}
           <img src={item.image} alt={item.name} />
         </div>
-      
+
         <div className="productName">{item.name}</div>
-      
+
         <div className="quantity">
           <button className="minusButton" onClick={this.decreaseQuantity}>
             -
@@ -66,15 +65,14 @@ class Product extends React.Component {
             +
           </button>
         </div>
-      
+
         <div className="price">{item.price}</div>
-      
+
         <div>
           <button className="deleteButton" onClick={this.onDeleteItem}>
             X
           </button>
         </div>
-      
       </div>
     );
   }
