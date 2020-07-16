@@ -1,6 +1,6 @@
 import React from "react";
 import Product from "./item";
-import "./list.css";
+import "./cart.css";
 
 class List extends React.Component {
   constructor(props){
@@ -38,7 +38,7 @@ class List extends React.Component {
   render() {
     console.log(this.state.productList, "list is here");
     const products = this.state.productList.map((item) => {
-      return <Product key={item.id} item={item} onDelete={this.deleteItem} />;
+      return  <Product  key={item.id} item={item} onDelete={this.deleteItem} />;
     });
 
     return <ul>{products}</ul>;

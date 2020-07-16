@@ -5,9 +5,12 @@ class Footer extends React.Component{
 
 render() {
     return (
-         <div>
-            <p>Continue Shopping</p>
-            <p>Subtotal: $ 799.00</p>            
+         <div className="footerContainer">
+            <div  className="continue"><p>Continue Shopping</p></div>
+           <div className="total">
+           <p >Subtotal: $ 799.00</p>            
+
+           </div> 
 
          </div>
     );

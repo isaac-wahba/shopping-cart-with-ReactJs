@@ -1,0 +1,16 @@
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: flex-end;
+}
+
+.continue {
+    flex-grow: 1;
+}
+
+.total {
+    flex-grow: 5;
+    text-align: right;
+    margin-right: 10px;
+}

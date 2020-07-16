@@ -5,13 +5,13 @@ import Footer from "./Components/Footer/Footer";
 import List from "./Components/Items List/list";
 const App = ()=> {
     return (
-      <div className="App">
+      <div className="container">
         <header className="App-header">
           <Header />
         </header>
-        <div className="App-body">
+        <section className="App-body">
           <List />
-        </div>
+        </section>
         <footer className="App-footer">
           <Footer />
         </footer>
