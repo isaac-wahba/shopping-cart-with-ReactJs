@@ -4,7 +4,7 @@ import './Header.css';
 class Header extends React.Component {
   render() {
     return (
-      <div>
+      <div className="headerClass">
         <h3>Shopping Cart</h3>
       </div>
     );
